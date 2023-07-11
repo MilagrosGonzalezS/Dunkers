@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon" />
+    <title>Top Team</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img class="logo" src="./imgs/dunkers-logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="teams.html">Teams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="best.html">Best players</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link current" href="top-team.html">Your top team</a>
+            </li>
+            <li>
+              <button type="button" class="btn btnInstall">Install App</button>
+            </li>
+            <li>
+              <button type="button" class="btn btnShare">Share App</button>
+            </li>
+            <li class="online nav-link">Online</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="create-team">
+      <h2 class="title title-pages">YOUR TOP 5 <span>SELECTION</span></h2>
+      <p>
+        To select a player go to <a href="teams.html">teams</a> page and select
+        the player of the team you are looking for. You can add up to 5 players.
+      </p>
+
+      <div class="top-team"></div>
+      <button id="clearPlayers" class="button">Delete team</button>
+      <button class="button button-share btnShareTeam">Share my team</button>
+    </div>
+
+    <footer id="footer"></footer>
+    <script>
+      window.onload = function () {
+        footer();
+        topTeam();
+      };
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
